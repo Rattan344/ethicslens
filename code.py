@@ -2549,51 +2549,10 @@ for setName, prompts in challenge_sets.items():
         prediction = predict_with_harness(prompt, trained_model, sbert, thresholds, binarizer)
         print(f"Text: '{prompt}'\n  → Predicted: {prediction}\n")
 
-"""Complete Code for the Transformer Ensemble"""
-
-
-
-"""Improved approach over multilabel classification using weighted loss functions and oversampling with SMOTE."""
 
 
 
 
-
-"""Bidirectional LSTM (Long Short-Term Memory) model, a type of recurrent neural network (RNN).
-
-Deep Learning Models with CNN
-"""
-
-
-
-"""bert
-
-BERT FOR 16 CATEGOIES ONLY
-
-saving the model
-
-loading the locally saved models
-
-fixing the sentence bert by including ethical data
-
-improved code of sentence bert
-
-loading the model
-
-cnn version of it
-
-loading the model with other responses
-
-4 DEEP LEARING MODELS AFTER FIXING ISSUES
-
-TRADITIONAL MODEL FOR MULTILABEL
-
-logistic regression binary classification
-
-multiple categories classification
-
-x ai
-"""
 
 
 
