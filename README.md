@@ -1,99 +1,168 @@
-# Updated README.md for EthicsLens Dataset
+🧠 EthicsLens: Dataset-Centric AI Ethics Classification
+📌 Overview
 
-```markdown
-🧠 **EthicsLens: Dataset-Centric AI Ethics Classification**
+EthicsLens is a large-scale synthetic dataset containing 38,808 AI-generated responses collected from seven major language models:
 
-## Overview
-This repository contains **EthicsLens**—a large-scale synthetic dataset of **38,808 AI-generated responses** from seven major language models (ChatGPT, Copilot, Grok, Claude, Gemini, LLaMA, Perplexity), annotated across **16 ethical risk categories** (bias, misinformation, toxicity, privacy violations, hate speech, harmful advice, etc.).
+ChatGPT
 
-**Research Paper Citation**:  
-Kartik, A., Raj, S., Rattan, A., et al. (2026). "Dataset-centric AI ethics classification." *AI Ethics*, 6, 30. https://doi.org/10.1007/s43681-025-00904-4
+Copilot
 
-## 📁 Repository Structure
-```
+Grok
+
+Claude
+
+Gemini
+
+LLaMA
+
+Perplexity
+
+Each response is annotated across 16 core ethical risk categories, including bias, misinformation, toxicity, privacy violations, hate speech, harmful advice, and related ethical dimensions.
+
+📄 Research Paper
+Kartik, A., Raj, S., Rattan, A., Sahu, D. (2026). Dataset-centric AI ethics classification.
+AI Ethics, 6, 30.
+https://doi.org/10.1007/s43681-025-00904-4
+
+📂 Repository Structure
+EthicsLens/
+│
 ├── dataset/
-│   ├── ethical.csv      # 19,375 samples (tab-separated)
-│   └── unethical.csv    # 19,438 samples (tab-separated)
-├── code.py             # Complete implementation
+│   ├── ethical.csv        # 19,375 samples (tab-separated)
+│   └── unethical.csv      # 19,438 samples (tab-separated)
+│
+├── code.py                # Full experimental implementation
 └── README.md
-```
 
-**Dataset Format**: **Tab-separated CSV files** (.csv) with columns: `text`, `response`, `label`, `categories`, `severity_score`, `explanation`.
+📄 Dataset Format
 
-## 📊 Dataset Statistics
-- **Total samples**: 38,808 valid instances  
-- **Ethical**: 19,375 (49.92%)
-- **Unethical**: 19,438 (50.08%)
-- **Core categories**: 16 primary ethical violations
-- **Spurious categories**: 149 (noise—ignore in analysis)
-- **Annotation**: **100% synthetic** via systematic prompt engineering
+File type: .csv
 
-## 🚀 Features
-- 38,808 **synthetic LLM responses** across 16 ethical categories
-- **Severity scoring** (0.0-1.0 ethical risk levels)
-- Binary + multi-label classification benchmarks
-- **9 algorithms** benchmarked (SVM, CNN, Sentence-BERT, etc.)
-- Reproducible setup for ethical AI research
+Encoding: UTF-8
 
-## ⚠️ **CRITICAL RESEARCH RESTRICTION NOTICE**
+Separator: Tab-separated
 
-**🔒 Dataset Access Status: RESTRICTED - RESEARCH PHASE ONLY**
+Columns:
 
-**This dataset is currently unavailable for public use, download, or redistribution.** Active research is ongoing. Access will be granted **post-publication** after final validation.
+text
+response
+label
+categories
+severity_score
+explanation
 
-**Academic researchers**: Contact corresponding author at `akashrattan21112003@gmail.com` for controlled access during research phase.
+📊 Dataset Statistics
 
-## ⚖️ **Legal Disclaimer & Liability Waiver**
+Total samples: 38,808 valid instances
 
-**1. Research-Only Use**: EthicsLens is generated **exclusively for academic AI ethics research**. Unauthorized commercial use, redistribution, or public deployment is prohibited.
+Ethical: 19,375 (49.92%)
 
-**2. Synthetic Nature**: **100% synthetic data** created via controlled prompt engineering across 7 LLMs. **Contains NO real human content, conversations, or PII.**
+Unethical: 19,438 (50.08%)
 
-**3. No Liability**: Authors, Sharda University, and collaborators bear **no legal responsibility** for:
-   - Misuse of dataset
-   - Model outputs derived from EthicsLens
-   - Interpretations or applications by third parties
+Core categories: 16
 
-**4. LLM Provider Protection**: **LLM providers (OpenAI, Anthropic, xAI, etc.) bear no responsibility** for content generated through our research methodology. All unethical examples were elicited via **specialized academic prompts** for boundary testing, **not** normal user interactions.
+Spurious categories: 149 (noise; excluded in analysis)
 
-**5. No Endorsement**: Dataset does **not** represent views, policies, or capabilities of LLM providers or authors.
+Annotation type: 100% synthetic (controlled prompt engineering)
 
-**6. Community Protection**: **No intent to harm, offend, or injure sentiments** of any individuals, communities, or groups. Content serves purely academic study of AI ethical behavior patterns.
+🚀 Key Features
 
-**7. IP Ownership**: Dataset copyright © 2026 Aditya Kartik, Surya Raj, Akash Rattan, Dr. Deepti Sahu. MIT License applies **post-research phase only**.
+38,808 synthetic LLM responses
 
-## 🛡️ **Explicit Legal Protections**
+Binary + multi-label classification setup
 
-```
-THE AUTHORS PROVIDE THIS DATASET "AS IS" WITHOUT WARRANTY OF ANY KIND.
+16 primary ethical risk dimensions
+
+Severity scoring (0.0 – 1.0)
+
+9 benchmarked ML/DL algorithms (SVM, CNN, Sentence-BERT, Random Forest, etc.)
+
+Fully reproducible academic pipeline
+
+⚠️ Dataset Access Status
+🔒 RESTRICTED – Research Phase Only
+
+This dataset is currently unavailable for public download, redistribution, or commercial use.
+
+Access will be granted post-publication after final validation.
+
+📩 Academic researchers may request controlled access:
+
+Akash Rattan
+Email: akashrattan21112003@gmail.com
+
+Sharda University, Greater Noida, India
+
+⚖️ Legal Disclaimer & Liability Waiver
+1️⃣ Research-Only Use
+
+EthicsLens is generated exclusively for academic AI ethics research.
+Unauthorized commercial use or redistribution is prohibited.
+
+2️⃣ Synthetic Nature
+
+This dataset is 100% synthetic.
+It contains:
+
+No real human conversations
+
+No personal data
+
+No personally identifiable information (PII)
+
+3️⃣ No Liability
+
+The authors, collaborators, and Sharda University bear no legal responsibility for:
+
+Misuse of the dataset
+
+Model outputs derived from EthicsLens
+
+Interpretations or third-party applications
+
+4️⃣ LLM Provider Protection
+
+LLM providers (e.g., OpenAI, Anthropic, xAI, Google, Meta) bear no responsibility for content generated via this research methodology.
+All unethical examples were elicited via specialized academic prompts for boundary testing.
+
+5️⃣ No Endorsement
+
+The dataset does not represent the views, policies, or capabilities of any LLM provider or author.
+
+6️⃣ Community Protection
+
+There is no intent to harm, offend, or injure sentiments of any individual or community.
+All content serves purely academic study of AI ethical behavior.
+
+7️⃣ Intellectual Property
+
+Copyright © 2026
+Aditya Kartik, Surya Raj, Akash Rattan, Dr. Deepti Sahu
+
+MIT License applies after research phase completion only.
+
+🛡 Explicit Legal Protection Statement
+THE DATASET IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+
 USERS ASSUME ALL RISKS ASSOCIATED WITH USE, INCLUDING BUT NOT LIMITED TO:
--  Claims of defamation or harm
--  Intellectual property disputes  
--  Misinterpretation of synthetic content
--  Deployment in production systems
+- Claims of defamation
+- Intellectual property disputes
+- Misinterpretation of synthetic content
+- Deployment in production systems
 
-LLM PROVIDERS ARE FULLY EXONERATED FROM LIABILITY REGARDING
-RESEARCH-GENERATED CONTENT VIA ACADEMIC PROMPT ENGINEERING.
-```
+LLM PROVIDERS ARE FULLY EXONERATED FROM LIABILITY
+REGARDING RESEARCH-GENERATED CONTENT.
 
-## 📈 Benchmark Results (From Published Research)
-| Model | Binary Accuracy | Multi-label Macro F1 |
-|-------|----------------|--------------------|
-| SVM | 99.2% | 94.13% |
-| CNN | 99.2% | **95.58%** |
-| Sentence-BERT | 98.56% | **95.7%** |
-| Random Forest | 98.83% | 92.01% |
+📈 Benchmark Results (Published)
+Model	Binary Accuracy	Multi-label Macro F1
+SVM	99.2%	94.13%
+CNN	99.2%	95.58%
+Sentence-BERT	98.56%	95.70%
+Random Forest	98.83%	92.01%
+📚 Citation
 
-## 🔒 Data Usage Guidelines (Research Phase)
-✅ **Academic ethics research only**  
-✅ **No commercial applications**  
-✅ **Cite original paper [Kartik et al., 2026]**  
-❌ **No redistribution**  
-❌ **No production deployment**  
-❌ **No real-world decision systems**
+If you use this work, please cite:
 
-## 📚 Citation
-```
 @article{kartik2026,
   title={Dataset-centric AI ethics classification},
   author={Kartik, Aditya and Raj, Surya and Rattan, Akash and Sahu, Deepti},
@@ -103,18 +172,15 @@ RESEARCH-GENERATED CONTENT VIA ACADEMIC PROMPT ENGINEERING.
   year={2026},
   doi={10.1007/s43681-025-00904-4}
 }
-```
 
-## 📧 Contact for Research Access
-**Akash Rattan** (Corresponding Author)  
-Email: akashrattan21112003@gmail.com  
-Sharda University, Greater Noida, India
+📜 Data Usage Guidelines (Research Phase)
 
----
+✅ Academic ethics research only
+✅ Citation of original paper required
+❌ No redistribution
+❌ No commercial deployment
+❌ No production decision systems
 
-**Research Phase Ends: TBA post-publication**
-```
+📌 Research Phase
 
-***
-
-**Complete legal protection.** **Covers all liability concerns.** **Explicit LLM provider exoneration.** **Tab-separated format specified.** **Paper properly cited.** **Research-only restriction clear.** **Copy-paste ready for GitHub.**
+Research Phase Ends: Post-publication (TBA)
